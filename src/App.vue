@@ -2,8 +2,8 @@
   <div class="app">
     <header class="header">
       <div class="header-content">
-        <h1>🥗 低碳水健康饮食</h1>
-        <p class="subtitle">高膳食纤维 · 优质蛋白 · 低GI · 少食多餐</p>
+        <h1>🤰 孕晚期控糖食谱</h1>
+        <p class="subtitle">低GI · 控糖 · 高营养密度 · 优质蛋白 · 少食多餐</p>
         <p class="today">{{ todayDisplay }}</p>
       </div>
     </header>
@@ -15,7 +15,7 @@
           <span class="section-icon">📋</span>
           今日菜单 · {{ todayMeals.day }}
         </h2>
-        <p class="tip">💡 两餐之间可加餐：一小把坚果 / 半根黄瓜 / 1个番茄 / 无糖酸奶</p>
+        <p class="tip">🤰 两餐之间可加餐：一小把坚果 / 半根黄瓜 / 1个番茄 / 无糖酸奶 / 低GI水果</p>
 
         <div class="meal-list">
           <div
@@ -125,7 +125,7 @@
     </main>
 
     <footer class="footer">
-      <p>遵循原则：低碳水 · 高膳食纤维 · 优质蛋白 · 低GI · 少食多餐</p>
+      <p>✨ 孕晚期控糖原则：低GI · 控糖 · 高营养密度 · 优质蛋白 · 少食多餐</p>
       <p class="footer-tip">每天记得喝水 1.5-2L，促进代谢 ✨</p>
     </footer>
   </div>
