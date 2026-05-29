@@ -138,10 +138,14 @@ import weekMeals from './data/meals.js'
 const selectedMeal = ref(null)
 const dayNames = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
 
-const todayIndex = computed(() => new Date().getDay())
+const todayIndex = computed(() => {
+  const jsDay = new Date().getDay()          // 0=周日, 1=周一, ..., 6=周六
+  return (jsDay + 6) % 7                      // 转为 0=周一, ..., 5=周六, 6=周日
+})
 const todayDisplay = computed(() => {
   const date = new Date()
-  return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`
+  const dayName = dayNames[new Date().getDay()]
+  return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日 ${dayName}`
 })
 const todayMeals = computed(() => weekMeals[todayIndex.value])
 
